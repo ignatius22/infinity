@@ -1,7 +1,7 @@
 // unsplash Api
 const count = 10;
 const apiKey = 'nlHw0zRcjwe_S9Lk9dTOCmvM72w_3BvGxHFLwdVf1EU'
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}_KEY&count=${count}`
+const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`
 
 //get photos from unsplash Api
 
