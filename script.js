@@ -41,22 +41,24 @@ function displayPhoto(){
 
 }
 
-
-
-
 //get photos from unsplash Api
 async function getPhotos(){
 	try {
 		const response = await fetch(apiUrl);
 		photosArray = await response.json();
-		displayPhoto()
-	
-		
+		displayPhoto()	
 	} catch (error) {
 		console.log('oops!! cant fetch photos',error)
 	}
-
 }
+
+// check to see if scrolling near bottom, load more photos
+window.addEventListener('scroll', () => {
+	if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000){
+		getPhotos()
+		console.log('load more')
+	}
+})
 
 // load photos 
 getPhotos()
