@@ -12,11 +12,16 @@ body{
 
 h1{
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 0;
 	margin-bottom: 15px;
 	font-size: 40px;
-	letter-spacing: 5px;
 	text-transform: uppercase;
+	color: #131313;
+	background: #e7e5e4;
+	letter-spacing: .15em;
+text-shadow: 2px 2px 2px #CEB4CD;
+position: sticky;
+top: 0;
 }
 
 .loader{
